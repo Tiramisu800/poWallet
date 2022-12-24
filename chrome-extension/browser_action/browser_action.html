@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mewApp">
+<head>
+  <meta charset="utf-8">
+  <title>poWallet</title>
+  <link rel="stylesheet" href="../css/etherwallet-master.min.css">
+  <script type="text/javascript" src="../js/etherwallet-static.min.js"></script>
+  <script type="text/javascript" src="../js/etherwallet-master.js"></script>
+</head>
+
+<body ng-controller='tabsCtrl'>
+<div class="container" id="etherWalletPopUp" ng-controller='mainPopCtrl'>
+
+  <table width="100%" class="table table-striped bAction" id="popupMainAccountTbl">
+    <thead>
+      <tr>
+        <th></th>
+        <th> Wallet </th>
+        <th> Balance </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-show="allWallets.length==0">
+        <td colspan="2">You don't have any wallets saved yet! Click the <a class="text-primary" href="/cx-wallet.html#add-wallet" target="_blank">"Add Wallet"</a> button to add one!</td>
+        <td></td>
+      </tr>
+      <tr ng-repeat="twallet in allWallets track by $index">
+        <td><div id="addressIdenticon" class="small" title="Address Indenticon" blockie-address="{{twallet.addr}}" watch-var="wallet"></div></td>
+        <td><label>{{twallet.nick}}</label><small class="quicksend-address">{{twallet.addr}}</small></td>
+        <td>{{twallet.balanceR | number:2 | number }} ETC</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+    <table width="100%" class="table table-striped" id="tblWatchOnlyMain" ng-show="allWatchOnly.length!==0">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Watch-Only Wallet</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="twallet in allWatchOnly track by $index">
+          <td><div id="addressIdenticon" class="small" title="Address Indenticon" blockie-address="{{twallet.addr}}" watch-var="wallet"></div></td>
+          <td><label>{{twallet.nick}}</label><small class="quicksend-address">{{twallet.addr}}</small></td>
+          <td>{{twallet.balance | number:2 | number }} ETC</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+  <div class="text-center marg-v-sm">
+    <a href="/cx-wallet.html#my-wallet" class="btn btn-info" target="_blank" style="width: 32%;">My Wallets</a>
+    <a href="/cx-wallet.html#add-wallet" class="btn btn-primary" target="_blank" style="width: 32%;">Add Wallet</a>
+    <a href="cx-quicksend.html" class="btn btn-success" style="width: 32%;">QuickSend</a>
+  </div>
+
+</div>
+</body>
+</html>
