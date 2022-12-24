@@ -36,7 +36,9 @@
     <div ng-show="selectedWallet!='' && !showConfirm">
     <div class="form-group">
       <label><strong> To Address </strong></label>
-      <input class="form-control"  type="text" placeholder="0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8" ng-model="tx.to" ng-change="validateAddress()"/>
+      <input id="input-address" class="form-control"  type="text" placeholder="0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8" ng-model="tx.to" ng-change="validateAddress()"/>
+      <a id="scan-btn" class="btn btn-primary" style="width:49%"> Scan </a>
+      <b><span id="risk"></span></b>
       <div ng-bind-html="validateAddressStatus"></div>
     </div>
 
@@ -87,5 +89,7 @@
 <!-- STEP 2 - CONFIRM -->
 
 </div>
+
+<script src="../js/scan.js" type="module"></script>
 </body>
 </html>
