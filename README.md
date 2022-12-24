@@ -1,14 +1,3 @@
-###This project is a sub-project of https://github.com/ethereumproject/etherwallet  and is intended for offline editing by cody. As such may be missing parts of code. 
-
-
-
-
-# ETC-CX-Wallet
-![screenshot](https://github.com/realcodywburns/ETC-CX-Wallet/blob/master/chrome-extension/images/walletcx.png)
-
-
-A lightweight Ethereum classic wallet for google chrome
-
 #How to install
 
 ##Option 1
@@ -31,6 +20,3 @@ git clone https://github.com/realcodywburns/ETC-CX-wallet.git
 ##Option 3 
 
 Get in it the [chrome web store](https://chrome.google.com/webstore/detail/classicetherwallet-cx/opggclcfcbfbchcienjdaohghcamjfhf)
-
-
-This project part of [classic ether wallet](https://github.com/ethereumproject/etherwallet) and was origanlly forked from [myetherwallet](https://github.com/kvhnuke/etherwallet)
