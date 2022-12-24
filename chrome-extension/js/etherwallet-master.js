@@ -2077,13 +2077,6 @@ var globalService = function($http, $httpParamSerializerJQLike) {
       url:"contracts",
       mew: false,
       cx: false
-    },
-    help: {
-      id: 10,
-      name: "Help",
-      url: "help",
-      mew: true,
-      cx: true
     }
   };
   var currentTab = 0;
