@@ -3,19 +3,21 @@
 #How to install
 
 ##Option 1
+
 1) Download the wallet
 git clone [link_of_this_repo]
 
 2) Drag and drop the crx file into chrome
 
 ##Option 2
-1.) Download Zip.
 
-2.) Extract Folder.
+1) Download Zip.
 
-3.) Open Google Chrome.
+2) Extract Folder.
 
-4.) Open Settings > Extensions > Load Unpacked Extension
+3) Open Google Chrome.
 
-5.) Open folder > Choose File "Chrome Extension"
+4) Open Settings > Extensions > Load Unpacked Extension
+
+5) Open folder > Choose File "Chrome Extension"
 
