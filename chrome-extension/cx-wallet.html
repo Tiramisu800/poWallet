@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>poWallet</title>
-  <meta name="description" content="Classic Ether Wallet: Open Source JavaScript Client-Side ETC Wallet">
+  <meta name="description" content="Classic Crypto Wallet">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/etherwallet-master.css">
@@ -444,11 +444,7 @@
             <p> See Transaction History: <br /> <a href="https://etherhub.io/addr/{{wallet.getAddressString()}}" target="_blank">https://etherhub.io/addr/ {{wallet.getAddressString()}}</a></p>
           </div>
           <br />
-          <div class="well">
-            <p> ClassicEtherWallet is a free, open-source service dedicated to your privacy and security. The more donations we receive, the more time we spend creating new features, listening to your feedback, and giving you what you want. Help us?</p>
-            <a class="btn btn-primary btn-block" ng-click="onDonateClick()">DONATE</a>
-            <div class="text-success text-center marg-v-sm"><strong ng-show="tx.donate"> THANK YOU!!! </strong></div>
-          </div>
+
         </div>
         <div class="col-sm-8">
           <h4>Send Transaction</h4>
@@ -469,11 +465,11 @@
             <input class="form-control" type="text" placeholder="Amount" ng-model="tx.value"/>
             <div class="radio">
               <label>
-                <input type="radio" name="currencyRadio" value="ether" ng-model="tx.unit"/>Ether</label>
+                <input type="radio" name="currencyRadio" value="ether" ng-model="tx.unit"/>ETH</label>
               <label>
-                <input type="radio" name="currencyRadio" value="finney" ng-model="tx.unit"/>Finney</label>
+                <input type="radio" name="currencyRadio" value="finney" ng-model="tx.unit"/>BNB</label>
               <label>
-                <input type="radio" name="currencyRadio" value="szabo" ng-model="tx.unit"/>Szabo</label>
+                <input type="radio" name="currencyRadio" value="szabo" ng-model="tx.unit"/>PFF</label>
             </div>
             <!-- advanced option panel -->
             <a ng-click="toggleShowAdvance()"><p class="strong"> + Advanced: Add More Gas or Data </p></a>
@@ -593,9 +589,9 @@
           <label>II. Value / Amount to Send</label>
           <input class="form-control" type="text" placeholder="Amount" ng-model="tx.value"/>
           <div class="radio">
-            <label><input type="radio" name="currencyRadioOffline" checked value="ether" ng-model="tx.unit"/>Ether</label>
-            <label><input type="radio" name="currencyRadioOffline" value="finney" ng-model="tx.unit" />Finney</label>
-            <label><input type="radio" name="currencyRadioOffline" value="szabo" ng-model="tx.unit"/>Szabo</label>
+            <label><input type="radio" name="currencyRadioOffline" checked value="ether" ng-model="tx.unit"/>ETH</label>
+            <label><input type="radio" name="currencyRadioOffline" value="finney" ng-model="tx.unit" />BNB</label>
+            <label><input type="radio" name="currencyRadioOffline" value="szabo" ng-model="tx.unit"/>PFF</label>
           </div>
         </div>
 
