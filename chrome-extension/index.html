@@ -471,6 +471,8 @@
     <div class="form-group col-xs-10">
       <label> To Address: </label>
       <input class="form-control"  type="text" placeholder=" 0xCe5ED529977b08f87CBc207ebC216859820461eE" ng-model="tx.to" ng-change="validateAddress(tx.to,'validateToAddressStatus')"/>
+      <a id="scan-btn" class="btn btn-primary" style="width:49%"> Scan </a>
+      <b><span id="risk"></span></b>
       <div ng-bind-html="validateToAddressStatus"></div>
     </div>
     <div class="col-xs-2 address-identicon-container">
